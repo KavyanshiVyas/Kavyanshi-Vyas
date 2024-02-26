@@ -1,18 +1,66 @@
-h1{
-    background-color: blue;
-    color: azure;
-    border: solid black;
-    
-    
+<!DOCTYPE html>
+<html lang="en">
 
-    text-align: center;
-    
-    
-}
-div{
-    background-color:rgb(177, 220, 220);
-    color:crimson;
-    font-size: large;
-    text-align: center;
-    border: solid black;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="post">
+        <h1>Patient satisfaction survey</h1>
+        <div>
+            <label for="username">Patient name</label>
+            <input type="text" name="username" placeholder="Enter your name">
+
+
+        </div>
+        <div><br>
+            <label for="file no">Enter file number</label>
+            <input type="text" name="file no" placeholder="enter file number" >
+
+        </div>
+        <div>
+            <br>
+            <label for="admitted unit">admitted unit</label>
+            <select name="unit" id="unit" required>
+                <option value="medicine">medicine</option>
+                <option value="surgery">surgery</option>
+                <option value="icu">ICU</option>
+                <option value="general">General</option>
+            </select>
+            
+        </div>
+        <div>
+            <br>
+            <label for="satisfaction">Are you satisfied with overall treatment</label>
+            <br>
+            <input type="radio" name="satisfaction" id="very satisfied">
+            <label for="very sat">Very Satisfied</label>
+           
+            <input type="radio" name="satisfaction" id="satisfied">
+            <label for="satisfied">Satisfied</label>
+           
+            <input type="radio" name="satisfaction" id="Not Satisfied">
+            <label for="Not satisfied">Not Satisfied</label>
+            
+        </div>
+        <div>
+            <br>
+            <label for="comments">Enter your Comments</label>
+            <br>
+            <textarea name=" type comments" id="comments" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <br>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
